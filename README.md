@@ -1,19 +1,5 @@
 # Estructuras de Datos
 
-## Descripción
-
-Este proyecto implementa varias estructuras de datos en Java, incluyendo árboles AVL y Rojo-Negro, listas enlazadas simples y dobles, listas circulares, listas doblemente circulares, y grafos. Se puede Realizar recorridos en orden, postorden y preorden, en todas las demas presente de acuerdo al orden de inserción. En todas las estructuras se pueda agregar, insertar y eliminar
-
-## Estructuras de Datos Implementadas
-
-1. **Árbol AVL**
-2. **Árbol Rojo-Negro**
-3. **Lista Enlazada Simple**
-4. **Lista Doblemente Enlazada**
-5. **Lista Circular**
-6. **Lista Doblemente Circular**
-7. **Grafo**
-
 ## Diagramas UML
 
 ### Diagrama de Clases
@@ -35,17 +21,4 @@ A continuación se presenta el diagrama de clases general del proyecto:
 Anteriormente se agregaron los elementos (Valor de nodos) para amostrar los recorridos
 
 ![b5371cc9-fd84-4292-8fdc-c4c03e74a308](https://github.com/DavidCh02/ArbolBinario/assets/166523123/926ad603-dc41-4ae4-9a18-0154b6b30e68)
-
-
------
-### Instalación y Uso Instalación
-#### Requisitos
-- Java JDK 8 o superior.
-- IDE compatible con Java (IntelliJ IDEA, Eclipse, etc.).
-
-## Instrucciones de Instalación
-1. Clona el repositorio.
-2. Abre el proyecto en tu IDE.
-3. Configura el proyecto según sea necesario.
-4. Ejecuta la clase Main.java para iniciar la aplicación.
 
