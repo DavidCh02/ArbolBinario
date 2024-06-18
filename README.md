@@ -26,7 +26,7 @@ Anteriormente se agregaron los elementos (Valor de nodos) para amostrar los reco
 ![b5371cc9-fd84-4292-8fdc-c4c03e74a308](https://github.com/DavidCh02/ArbolBinario/assets/166523123/926ad603-dc41-4ae4-9a18-0154b6b30e68)
 
 --------
-## Instalación y Uso Instalación
+## Instalación y Uso 
 ### Requisitos
 - Java JDK 8 o superior.
 - IDE compatible con Java (IntelliJ IDEA, Eclipse, etc.).
