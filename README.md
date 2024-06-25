@@ -3,7 +3,7 @@
 
 Este proyecto consiste en una interfaz gráfica de usuario (GUI) desarrollada en Java utilizando la biblioteca Swing. La aplicación permite a los usuarios interactuar con varias estructuras de datos, como listas enlazadas, árboles AVL, árboles Rojo-Negro y grafos. Los usuarios pueden agregar, eliminar y mostrar elementos en estas estructuras de datos a través de la interfaz gráfica.
 
-## CaracterísticasCaracterísticas
+## Características
 - Interfaz gráfica intuitiva: La GUI está diseñada para ser fácil de usar y estéticamente agradable.
 - Soporte para múltiples estructuras de datos: El proyecto incluye varias estructuras de datos comúnmente utilizadas en la informática.
 - Operaciones básicas: Los usuarios pueden agregar, eliminar y mostrar elementos en las estructuras de datos.
