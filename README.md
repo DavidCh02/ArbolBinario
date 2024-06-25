@@ -66,9 +66,9 @@ La interfaz principal de la aplicación contiene los siguientes elementos:
 - Área de texto (JTextArea): Muestra el resultado de las operaciones realizadas en las estructuras de datos.
 
 #### Realizar Operaciones
-1. - Seleccionar estructura de datos: Usa el ComboBox para seleccionar la estructura de datos con la que deseas trabajar.
-2. - Ingresar valor: Escribe un valor en el campo de texto.
-3. - Agregar valor: Haz clic en el botón Agregar para agregar el valor a la estructura seleccionada.
-4. - Eliminar valor: Haz clic en el botón Eliminar para eliminar el valor de la estructura seleccionada.
-5. - Mostrar elementos: Haz clic en el botón Mostrar para ver los elementos actuales de la estructura seleccionada en el área de texto.
+1. Seleccionar estructura de datos: Usa el ComboBox para seleccionar la estructura de datos con la que deseas trabajar.
+2. Ingresar valor: Escribe un valor en el campo de texto.
+3. Agregar valor: Haz clic en el botón Agregar para agregar el valor a la estructura seleccionada.
+4. Eliminar valor: Haz clic en el botón Eliminar para eliminar el valor de la estructura seleccionada.
+5. Mostrar elementos: Haz clic en el botón Mostrar para ver los elementos actuales de la estructura seleccionada en el área de texto.
 
