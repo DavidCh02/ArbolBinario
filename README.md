@@ -47,8 +47,8 @@ Anteriormente se agregaron los elementos (Valor de nodos) para amostrar los reco
 
 - Copia el codigo:
 
-       git clone https://github.com/tu_usuario/tu_repositorio.git
-
+       https://github.com/DavidCh02/ArbolBinario.git
+  
 - Abrir el proyecto en el IDE: Importa el proyecto en tu IDE favorito.
 
 - Compilar el proyecto: Asegúrate de que tu IDE está configurado para compilar el proyecto correctamente.
