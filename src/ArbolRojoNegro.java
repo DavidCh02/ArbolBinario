@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 class ArbolRojoNegro<T extends Comparable<T>> extends ArbolAbstracto<T> {
     private static final boolean ROJO = true;
     private static final boolean NEGRO = false;
@@ -65,7 +67,7 @@ class ArbolRojoNegro<T extends Comparable<T>> extends ArbolAbstracto<T> {
     }
 
     @Override
-    public void recorrer() {
+    public void recorrer(JTextArea outputArea) {
 
     }
 }
