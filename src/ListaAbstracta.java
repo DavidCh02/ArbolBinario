@@ -6,6 +6,7 @@ abstract class ListaAbstracta<T> implements EstructuraDatos<T> {
         public Nodo<T> anterior;
         T valor;
         Nodo<T> siguiente;
+
         Nodo(T valor) {
             this.valor = valor;
         }

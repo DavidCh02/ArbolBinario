@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 class ArbolAVL<T extends Comparable<T>> extends ArbolAbstracto<T> {
     private NodoArbol<T> agregar(NodoArbol<T> nodo, T valor) {
         if (nodo == null) return new NodoArbol<>(valor);
@@ -61,7 +63,7 @@ class ArbolAVL<T extends Comparable<T>> extends ArbolAbstracto<T> {
     }
 
     @Override
-    public void recorrer() {
+    public void recorrer(JTextArea outputArea) {
 
     }
 

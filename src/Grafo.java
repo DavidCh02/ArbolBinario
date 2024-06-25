@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -22,13 +23,28 @@ class Grafo<T> implements EstructuraDatos<T> {
     }
 
     @Override
-    public void recorrer() {
+    public void recorrer(JTextArea outputArea) {
         for (T clave : listaAdyacencia.keySet()) {
-            System.out.print(clave + ": ");
+            outputArea.append(clave + ": ");
             for (T valor : listaAdyacencia.get(clave)) {
-                System.out.print(valor + " ");
+                outputArea.append(valor + " ");
             }
-            System.out.println();
+            outputArea.append("\n");
         }
+    }
+
+    @Override
+    public List<Integer> recorridoEnOrden() {
+        return List.of();
+    }
+
+    @Override
+    public List<Integer> recorridoPreOrden() {
+        return List.of();
+    }
+
+    @Override
+    public List<Integer> recorridoPostOrden() {
+        return List.of();
     }
 }

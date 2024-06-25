@@ -1,3 +1,6 @@
+import javax.swing.*;
+import java.util.List;
+
 class ListaCircular<T> extends ListaAbstracta<T> {
     @Override
     public void agregar(T valor) {
@@ -41,13 +44,31 @@ class ListaCircular<T> extends ListaAbstracta<T> {
     }
 
     @Override
-    public void recorrer() {
+    public void recorrer(JTextArea outputArea) {
         if (cabeza == null) return;
         Nodo<T> actual = cabeza;
+        StringBuilder sb = new StringBuilder();
         do {
-            System.out.print(actual.valor + " -> ");
+            sb.append(actual.valor).append(" -> ");
             actual = actual.siguiente;
         } while (actual != cabeza);
-        System.out.println("(vuelta a cabeza)");
+        sb.append("(vuelta a cabeza)");
+        outputArea.append(sb.toString() + "\n");
+    }
+
+
+    @Override
+    public List<Integer> recorridoEnOrden() {
+        return List.of();
+    }
+
+    @Override
+    public List<Integer> recorridoPreOrden() {
+        return List.of();
+    }
+
+    @Override
+    public List<Integer> recorridoPostOrden() {
+        return List.of();
     }
 }

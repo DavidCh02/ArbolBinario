@@ -1,8 +1,9 @@
-class ListaDoblementeCircular<T> extends ListaDobleEnlazada<T> {
+import javax.swing.*;
+
+class ListaDoblementeCircular<T> extends ListaDoblementeEnlazada<T> {
     @Override
     public void agregar(T valor) {
         NodoDoble<T> nuevoNodo = new NodoDoble<>(valor);
-        NodoDoble<T> cola = null;
         if (cabeza == null) {
             cabeza = nuevoNodo;
             cola = nuevoNodo;
@@ -20,7 +21,6 @@ class ListaDoblementeCircular<T> extends ListaDobleEnlazada<T> {
     @Override
     public void eliminar(T valor) {
         if (cabeza == null) return;
-        NodoDoble<T> cola = null;
         if (cabeza.valor.equals(valor) && cabeza.siguiente == cabeza) {
             cabeza = null;
             cola = null;
@@ -38,7 +38,7 @@ class ListaDoblementeCircular<T> extends ListaDobleEnlazada<T> {
         }
         if (actual != cola) {
             actual.anterior.siguiente = actual.siguiente;
-            ((NodoDoble<T>) actual.siguiente).anterior = actual.anterior;
+            actual.siguiente.anterior = actual.anterior;
         } else if (actual.valor.equals(valor)) {
             cola = cola.anterior;
             cola.siguiente = cabeza;
@@ -47,13 +47,15 @@ class ListaDoblementeCircular<T> extends ListaDobleEnlazada<T> {
     }
 
     @Override
-    public void recorrer() {
+    public void recorrer(JTextArea outputArea) {
         if (cabeza == null) return;
         NodoDoble<T> actual = (NodoDoble<T>) cabeza;
+        StringBuilder sb = new StringBuilder();
         do {
-            System.out.print(actual.valor + " <-> ");
+            sb.append(actual.valor).append(" <-> ");
             actual = (NodoDoble<T>) actual.siguiente;
         } while (actual != cabeza);
-        System.out.println("(vuelta a cabeza)");
+        sb.append("(vuelta a cabeza)");
+        outputArea.append(sb.toString() + "\n");
     }
 }

@@ -14,7 +14,9 @@ Este proyecto consiste en una interfaz gráfica de usuario (GUI) desarrollada en
 ### Diagrama de Clases
 
 A continuación se presenta el diagrama de clases general del proyecto:
-![fPPlIznC4C3VvrFiu_CcfNSWXK8hScXLYg2sgFIDM9WauztQpKuwkodKqa_KZz1tVhAQr6dCtXuvBn4akpFpcpypkxazvu5zNPhaFx_04bLbGDl4KwKygOoyfr8LcZ7tccpYlcXR0KEfZBRelrUeYFs2aYGtu9pQvupC_gUJtSkP](https://github.com/DavidCh02/ArbolBinario/assets/166523123/8aecb7ed-d2c6-4efc-82e6-985ee9430145)
+
+![Arbol Binario UML](https://github.com/DavidCh02/ArbolBinario/assets/166523123/122dc1f9-9e7d-4f4e-8bd3-7c08b6d32d5b)
+
 
 
 ## Capturas de pantalla 

@@ -1,4 +1,9 @@
+import javax.swing.*;
+import java.util.List;
+
 class ListaEnlazadaSimple<T> extends ListaAbstracta<T> {
+    private Nodo<T> cabeza;
+
     @Override
     public void agregar(T valor) {
         Nodo<T> nuevoNodo = new Nodo<>(valor);
@@ -29,13 +34,30 @@ class ListaEnlazadaSimple<T> extends ListaAbstracta<T> {
         }
     }
 
-    @Override
-    public void recorrer() {
+    public void recorrer(JTextArea outputArea) {
         Nodo<T> actual = cabeza;
+        StringBuilder sb = new StringBuilder();
         while (actual != null) {
-            System.out.print(actual.valor + " -> ");
+            sb.append(actual.valor).append(" -> ");
             actual = actual.siguiente;
         }
-        System.out.println("null");
+        sb.append("null");
+        outputArea.append(sb.toString() + "\n"); // Agregar el recorrido al outputArea
+    }
+
+
+    @Override
+    public List<Integer> recorridoEnOrden() {
+        return List.of();
+    }
+
+    @Override
+    public List<Integer> recorridoPreOrden() {
+        return List.of();
+    }
+
+    @Override
+    public List<Integer> recorridoPostOrden() {
+        return List.of();
     }
 }

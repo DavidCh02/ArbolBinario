@@ -1,3 +1,6 @@
+import javax.swing.*;
+import java.util.List;
+
 class ListaDobleEnlazada<T> extends ListaAbstracta<T> {
     private NodoDoble<T> cola;
 
@@ -42,12 +45,29 @@ class ListaDobleEnlazada<T> extends ListaAbstracta<T> {
     }
 
     @Override
-    public void recorrer() {
-        NodoDoble<T> actual = (NodoDoble<T>) cabeza;
+    public void recorrer(JTextArea outputArea) {
+        NodoDoble<T> actual = cola;
+        StringBuilder sb = new StringBuilder();
         while (actual != null) {
-            System.out.print(actual.valor + " <-> ");
-            actual = (NodoDoble<T>) actual.siguiente;
+            sb.insert(0, actual.valor + " <-> ");
+            actual = actual.anterior;
         }
-        System.out.println("null");
+        sb.append("null");
+        outputArea.append(sb.toString() + "\n");
+    }
+
+    @Override
+    public List<Integer> recorridoEnOrden() {
+        return List.of();
+    }
+
+    @Override
+    public List<Integer> recorridoPreOrden() {
+        return List.of();
+    }
+
+    @Override
+    public List<Integer> recorridoPostOrden() {
+        return List.of();
     }
 }
